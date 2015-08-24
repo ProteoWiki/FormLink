@@ -7,3 +7,4 @@ Adds a simple Form Link
 
 * link method: post, get
 * link type: button, post button, link, etc.
+* query string: parameters sent to form
