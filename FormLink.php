@@ -25,13 +25,13 @@ call_user_func( function() {
 });
 
 function wfFormLinkSetup( Parser $parser ) {
-	$parser->setHook( 'FormLink', 'wfFormLinkRender' );
-	$parser->setFunctionHook( 'FormLink', 'wfFormLinkFuncRender' );
+	$parser->setHook( 'FormALink', 'wfFormLinkRender' );
+	$parser->setFunctionHook( 'FormALink', 'wfFormLinkFuncRender' );
 	return true;
 }
 
 function wfFormLinkFuncMagic( &$magicWords, $langCode ) {
-	$magicWords['FormLink'] = array( 0, 'FormLink' );
+	$magicWords['FormALink'] = array( 0, 'FormALink' );
 	# unless we return true, other parser functions extensions won't get loaded.
 	return true;
 }
